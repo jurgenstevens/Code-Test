@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+// let's start off by importing the json
+import returns from "./returns/returns.json";
 
 function App() {
   return (
