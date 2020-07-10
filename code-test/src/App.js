@@ -4,6 +4,7 @@ import { Container, Grid, Header, List } from "semantic-ui-react";
 // let's start off by importing the json
 import returns from "./returns/returns.json";
 
+// map the returns json and use the reverse method for the ascending order requested
 class App extends Component {
   render() {
     return (
@@ -13,7 +14,7 @@ class App extends Component {
             <Grid.Column>
               <Header>Year | Return</Header>
               <List>
-                {returns.map((r) => {
+                {returns.reverse().map((r) => {
                   return (
                     <List.Item key={r.id}>
                       <List.Content>
