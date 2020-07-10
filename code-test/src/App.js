@@ -7,12 +7,20 @@ import returns from "./returns/returns.json";
 // import the header from the components folder
 import HeaderComponent from "./components/Header";
 
+import Slider, { Range } from "rc-slider";
+import "rc-slider/assets/index.css";
+
 // map the returns json and use the reverse method for the ascending order requested
 class App extends Component {
   render() {
     return (
       <Container>
         <HeaderComponent />
+        <br />
+        <Slider />
+        <br />
+        <Range />
+        <br />
         <Grid>
           <Grid.Row>
             <Grid.Column>
