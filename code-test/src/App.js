@@ -17,20 +17,24 @@ class App extends Component {
       <Container>
         <HeaderComponent />
         <br />
-        <Slider />
-        <br />
         <Range />
         <br />
         <Grid>
           <Grid.Row>
             <Grid.Column>
-              <Header>Year | Return</Header>
+              <td>Year | Return</td>
               <List>
                 {returns.reverse().map((r) => {
                   return (
                     <List.Item key={r.id}>
                       <List.Content>
-                        {r.year} | {r.totalReturn}
+                        <table>
+                          <tr>
+                            <td>{r.year}</td>
+                            <td>{r.totalReturn}</td>
+                          </tr>
+                        </table>
+                        <br />
                       </List.Content>
                     </List.Item>
                   );
