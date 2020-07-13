@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-export default function Table() {
+export default function Table(props) {
   return (
     // titles below so the Header component won't be necessary
     <table>
