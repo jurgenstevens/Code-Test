@@ -14,7 +14,16 @@ export default function RangeSlider(props) {
   return (
     // the slider's style will be based on the css in the wrapper style
     <div style={wrapperStyle}>
-      <Range />
+      {/* below is the range slider w/ attribute to give it its functionality */}
+      <Range
+        placement="top"
+        min={m}
+        max={M}
+        onChange={props.onChange}
+        defaultValue={props.defaultValue}
+        marks={marks}
+        allowCross={false} // this will not allow the marks to pass each other
+      />
     </div>
   );
 }
