@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Grid, List } from "semantic-ui-react";
 // let's import the json
 import returns from "../returns/returns.json";
+import "../App.css";
 
 class Table extends Component {
   render() {
@@ -10,7 +11,11 @@ class Table extends Component {
         <Grid>
           <Grid.Row>
             <Grid.Column>
-              <td>Year | Return</td>
+              <tr>
+                <th>Year</th>
+                <th>Total Return</th>
+                <th>Cumulative Returns</th>
+              </tr>
               <List>
                 {returns.reverse().map((r) => {
                   return (

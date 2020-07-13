@@ -15,7 +15,7 @@ class App extends Component {
       <Container>
         <HeaderComponent />
         <br />
-        <Range />
+        <Range className="range" />
         <br />
         <Table />
       </Container>

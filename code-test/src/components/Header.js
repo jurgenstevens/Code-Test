@@ -4,7 +4,9 @@ import { Header } from "semantic-ui-react";
 const HeaderComponent = () => (
   <div>
     <Header size="huge">RetireUp Code Test</Header>
-    <Header size="medium">S&P 500 Index</Header>
+    <Header className="headerTitle" size="medium">
+      S&P 500 Index 1970-2019
+    </Header>
   </div>
 );
 
