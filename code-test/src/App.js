@@ -44,7 +44,7 @@ class App extends Component {
           defaultValue={sliderValues}
         />
         {/* Below is the Table component, setting up the attributes w/ this.state will allow the data to go from here to the component and back */}
-        <Table />
+        <Table returns={this.state.returns} range={sliderValues} />
       </Container>
     );
   }
