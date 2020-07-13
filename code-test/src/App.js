@@ -12,6 +12,7 @@ class App extends Component {
     return (
       <Container>
         <h1>Hello from App.js</h1>
+        <Table />
       </Container>
     );
   }
