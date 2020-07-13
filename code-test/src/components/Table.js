@@ -1,4 +1,6 @@
 import React from "react";
+// import from the Cumulative component
+import Cumulative from "./Cumulative";
 import "../App.css";
 
 export default function Table(props) {
@@ -23,9 +25,15 @@ export default function Table(props) {
       {/* column data output, we will map the tableReturns below */}
       {tableReturns.map((row) => (
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          {/* below will show the row's year */}
+          <td>{row.year}</td>
+          {/* below, ternary operator states that if the row's return is less than 0, then use negatives css which will turn numbers red */}
+          <td className={row.totalReturn < 0 ? "negatives" : ""}></td>
+          {/* below will display cumulative return requested through the Cumulative component 
+              will add the attributes to pass props*/}
+          <td>
+            <Cumulative init={initial} cur={row.totalReturn} />
+          </td>
         </tr>
       ))}
     </table>
