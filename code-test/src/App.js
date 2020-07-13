@@ -27,11 +27,22 @@ class App extends Component {
     };
   }
 
+  // handles the change above w/ min/max
+  handleChange = (sliderValues) => {
+    this.setState({ sliderValues });
+  };
+
   render() {
+    const { sliderValues } = this.state;
     return (
       <Container>
         {/* Below is the Slider component, setting up the attributes w/ this.state will allow the data to go from here to the component and back */}
-        <Slider />
+        <Slider
+          min={this.state.min}
+          max={this.state.max}
+          onChange={this.handleChange}
+          defaultValue={sliderValues}
+        />
         {/* Below is the Table component, setting up the attributes w/ this.state will allow the data to go from here to the component and back */}
         <Table />
       </Container>
