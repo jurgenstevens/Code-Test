@@ -28,7 +28,9 @@ export default function Table(props) {
           {/* below will show the row's year */}
           <td>{row.year}</td>
           {/* below, ternary operator states that if the row's return is less than 0, then use negatives css which will turn numbers red */}
-          <td className={row.totalReturn < 0 ? "negatives" : ""}></td>
+          <td className={row.totalReturn < 0 ? "negatives" : ""}>
+            {row.totalReturn}
+          </td>
           {/* below will display cumulative return requested through the Cumulative component 
               will add the attributes to pass props*/}
           <td>
