@@ -36,6 +36,8 @@ class App extends Component {
     const { sliderValues } = this.state;
     return (
       <Container>
+        <h1 className="codeTest">RetireUp Code Test</h1>
+        <h2 className="indexTitle">S&P 500 Yearly Index Returns</h2>
         {/* Below is the Slider component, setting up the attributes w/ this.state will allow the data to go from here to the component and back */}
         <Slider
           min={this.state.min}

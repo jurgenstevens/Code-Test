@@ -9,7 +9,7 @@ const Range = createSliderWithTooltip(Slider.Range);
 export default function RangeSlider(props) {
   const m = props.min;
   const M = props.max;
-  const marks = { 1926: m, 2019: M };
+  const marks = { 1926: m, 2018: M };
   const wrapperStyle = { width: "70%", margin: 50, marginLeft: "20%" };
   return (
     // the slider's style will be based on the css in the wrapper style
