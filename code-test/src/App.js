@@ -30,9 +30,9 @@ class App extends Component {
   render() {
     return (
       <Container>
-        {/* Below is the Slider component */}
+        {/* Below is the Slider component, setting up the attributes w/ this.state will allow the data to go from here to the component and back */}
         <Slider />
-        {/* Below is the Table component */}
+        {/* Below is the Table component, setting up the attributes w/ this.state will allow the data to go from here to the component and back */}
         <Table />
       </Container>
     );
